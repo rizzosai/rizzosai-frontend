@@ -29,3 +29,10 @@ We may update these Terms. Continued use means you accept the changes.
 
 ## 9. Contact
 Email: ai@rizzosai.com
+
+10. GST and Stripe Fees
+RIZZOS AI uses Stripe for payment processing. Stripe may collect Goods and Services Tax (GST) on applicable transactions in accordance with Australian tax law.
+
+Users are responsible for reporting and paying their own GST obligations based on income earned through the platform.
+
+RIZZOS AI does not provide tax advice and recommends consulting a registered tax professional.
