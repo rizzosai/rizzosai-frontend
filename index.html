@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RizzosAI — Make It Legendary 👑</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ...existing code... */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 3-Day Trial Block -->
+        <section id="trial-block"
+            style="background: linear-gradient(90deg, #fff 60%, #0033a0 100%); color: #0033a0; border-radius: 18px; box-shadow: 0 4px 32px #0033a044; margin: 32px 0 24px 0; padding: 32px 18px 24px 18px; position: relative; text-align: center; overflow: hidden;">
+            <div style="position: absolute; top: 18px; left: 18px;">
+                <span
+                    style="background: linear-gradient(90deg, #d9001f, #0033a0); color: #fff; padding: 6px 18px; border-radius: 999px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 8px #d9001f44; letter-spacing: 1px;">Trial
+                    Active</span>
+            </div>
+            <h2
+                style="font-size:2.2em; font-weight:900; color: #d9001f; margin-bottom: 0.3em; text-shadow: 0 2px 12px #fff, 0 0 8px #0033a0; animation: pulse 1.2s infinite alternate;">
+                You’ve Got 3 Days to Lock In Your Throne 👑</h2>
+            <p style="font-size:1.15em; margin-bottom: 1.2em; color: #0033a0; font-weight: 600;">Refer 3 before
+                time runs out. After that, the empire bills you daily.</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 18px; margin-bottom: 1.2em;">
+                <span id="trial-countdown"
+                    style="font-size: 2em; font-weight: bold; border: 3px solid #d9001f; background: #fff; color: #d9001f; padding: 10px 28px; border-radius: 12px; box-shadow: 0 2px 12px #d9001f88; animation: pulse 1s infinite alternate; letter-spacing: 2px;">03d
+                    00h 00m 00s</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Crown"
+                    style="width: 48px; height: 48px; margin-left: 8px; animation: bounce 1.5s infinite alternate; filter: drop-shadow(0 2px 8px #d9001f);" />
+            </div>
+            <button id="start-empire-btn"
+                style="background: linear-gradient(90deg, #d9001f, #0033a0 80%); color: #fff; font-weight: bold; font-size: 1.2em; padding: 14px 38px; border-radius: 999px; box-shadow: 0 2px 12px #0033a033; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; margin-top: 8px;"
+                onmouseover="this.style.transform='scale(1.07)';this.style.boxShadow='0 4px 24px #d9001f66';"
+                onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 2px 12px #d9001f33';">Start
+                Your Empire</button>
+            <script>
+                // Smooth scroll to AWeber form when Start Your Empire is clicked
+                document.addEventListener('DOMContentLoaded', function () {
+                    var btn = document.getElementById('start-empire-btn');
+                    var aweberForm = document.getElementById('aweber-form-block');
+                    if (btn && aweberForm) {
+                        btn.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            aweberForm.scrollIntoView({ behavior: 'smooth' });
+                        });
+                    }
+                });
+            </script>
+        </section>
+
+        <style>
+            @keyframes bounce {
+                from {
+                    transform: translateY(0);
+                }
+
+                to {
+                    transform: translateY(-12px);
+                }
+            }
+        </style>
+
+        <script>
+            // Replace this with actual joined_at timestamp from backend
+            const joinedAt = new Date(); // Example: new Date("2025-10-17T00:00:00Z")
+            const trialExpires = new Date(joinedAt.getTime() + 3 * 24 * 60 * 60 * 1000);
+
+            function updateTrialCountdown() {
+                const now = new Date();
+                const diff = trialExpires - now;
+                const el = document.getElementById("trial-countdown");
+                if (!el) return;
+                if (diff <= 0) {
+                    el.textContent = "Trial Expired";
+                    el.style.background = '#ffeaea';
+                    el.style.color = '#888';
+                    return;
+                }
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                const seconds = Math.floor((diff / 1000) % 60);
+                el.textContent = `${days.toString().padStart(2, '0')}d ${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+            }
+            setInterval(updateTrialCountdown, 1000);
+            updateTrialCountdown();
+        </script>
+        <h1>RizzosAI Is Live 👑</h1>
+        <div class="subtitle">One recruit covers you for life. The second builds your empire. The third one is
+            earning you like a king.</div>
+
+        <!-- $10 Membership Section -->
+        <div class="block" style="background:#0033a0;color:#fff;border:3px solid #d9001f;">
+            <div
+                style="margin-top:18px;font-size:1.08em;color:#fff;background:#0033a0;border-radius:12px;padding:16px 14px;box-shadow:0 2px 12px #0033a033;">
+                <b>Why does this system work?</b> Because every second one of your referrals goes to me—Rizzo.
+                That’s my cut, and it keeps the engine running for everyone.<br>
+                Every referral under me gets thrown into the pool, where they’ll receive their next referrals
+                into the pool of the level they join at.<br>
+                Highest bidder gets put in first—just kidding! It doesn’t matter where you are in the pool, you
+                get the same service. All your referrals will be passed up to you as soon as the system gets
+                your next three, which won’t take long.<br>
+                I’ve seen positions fill up fast because money talks and bullcrap walks. This is pure flow, pure
+                fairness, and pure speed.
+            </div>
+            <h2 style="color:#fff;">$10 One-Time Membership</h2>
+            <p style="font-size:1.2em;">
+                Every member pays a <b>$10 one-time membership fee</b> to unlock their dashboard, affiliate
+                engine, and hosting perks.<br>
+                <span style="color:#fff;font-weight:bold;">No recurring fees. Just $10 to start your
+                    empire!</span>
+            </p>
+            <div
+                style="margin-top:1em;font-size:1.1em;color:#fff;background:#0033a0;border-radius:12px;padding:18px 16px;box-shadow:0 2px 12px #d9001f33;">
+                <b>Here’s the magic:</b> Once you buy into this program, you’re buying into pure automation.<br>
+                Set it up once, and the system runs itself—referrals, payments, dashboard, all on autopilot.<br>
+                No answering calls unless you want to. If you love selling, go wild! If you want hands-off
+                freedom, just let the system work for you.<br>
+                <span style="color:#fff;font-weight:bold;">How much you make is up to you and your empire.
+                    The system never takes a cut from your earnings—once you’re in, it’s all yours.</span>
+            </div>
+            <div
+                style="margin-top:18px;font-size:1.08em;color:#fff;background:#d9001f;border-radius:12px;padding:16px 14px;box-shadow:0 2px 12px #0033a033;">
+                <b>In plain English:</b> Once you’re in, you’re in. I’ll even advertise for you—when your third
+                person joins, you’re set, and from there, you’re on your own empire-building journey.<br>
+                It doesn’t matter how many people you know. This system works for everyone. It won’t take long
+                to fill your positions—once the word gets out, this will move fast.<br><br>
+                This has never been done before: daily payments, straight into your account, on autopilot. Every
+                day, as soon as the clock hits midnight, your payments land automatically.<br>
+                Every referral under you pays you daily as long as they keep their account active. And every
+                time someone brings in their second referral, that person moves up—so you’re always building,
+                always earning.<br>
+                No stress, no chasing, just pure flow. Welcome to the new way to build wealth—simple, automated,
+                and unstoppable.
+            </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <h2>💸 The Compensation Plan</h2>
+        <p>
+            <b>Not just about the $499 plan!</b> Pick the level that fits your empire—Starter, Tools, Vault,
+            Special, or Empire. Every tier unlocks perks and puts you in the flow.<br><br>
+            <b>How does the money machine work?</b><br>
+            <span style="color:#d9001f;font-weight:bold;">You only need ONE person to cover your daily admin
+                fee.</span> That person pays you daily.<br>
+            <span
+                style="background:#0033a0;color:#fff;font-weight:bold;padding:4px 8px;border-radius:6px;display:inline-block;">Every
+                second referral the system brings in goes to me (Rizzo 👑)!</span><br>
+            Here’s the twist: The system is designed so that every second referral—no matter who brings them
+            in—gets passed up to me, Rizzo. It’s how the kingdom keeps growing and everyone gets a shot at the
+            top.<br><br>
+            After your first, every other recruit is yours to keep and build your empire. But every second one,
+            the system sends up to me, keeping the flow strong and the rewards rolling.<br><br>
+            <b>It’s a win-win referral river that flows uphill.</b> You build once, you earn forever, and
+            everyone
+            gets a shot at the top. No chasing, no spreadsheets, just pure automated flow.<br><br>
+            <span style="color:#0033a0;font-weight:bold;">Choose your plan, join the flow, and let the empire
+                build
+                itself—one happy recruit at a time!</span>
+        </p>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <div class="block">
+        <h2>🧠 Why It’s Brilliant</h2>
+        <ul>
+            <li>Daily payments = daily dopamine</li>
+            <li>No chasing, no spreadsheets</li>
+            <li>You inherit second recruits from everyone below you</li>
+            <li>$500/day potential from a single recruit</li>
+            <li>Infinite depth. Automated flow. No burnout.</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h2>😂 The Vibe</h2>
+        <p>This isn’t MLM. This is <b>MLF — Money Loves Flow</b>.</p>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>MLM</th>
+                <th>MLF (RizzosAI)</th>
+            </tr>
+            <tr>
+                <td>Recruit stress</td>
+                <td>“You need 5 people by Friday”</td>
+                <td>“Just bring two. Then chill.”</td>
+            </tr>
+            <tr>
+                <td>Fees</td>
+                <td>Monthly, hidden, sneaky</td>
+                <td>$0 after your second recruit</td>
+            </tr>
+            <tr>
+                <td>Loyalty</td>
+                <td>Everyone’s chasing rank</td>
+                <td>Everyone’s building your empire</td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td>Manual, messy</td>
+                <td>Automated, daily, clean</td>
+            </tr>
+            <tr>
+                <td>Depth</td>
+                <td>Capped at 10 levels</td>
+                <td>Infinite inheritance</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="block leaderboard">
+        <h3>🏆 Leaderboard</h3>
+        <ul class="leaderboard-list" id="leaderboard">
+            <li style="color:#0033a0;"><span class="crown">👑</span> Rizzo — $500/day</li>
+            <li style="color:#0033a0;">Alex — $350/day</li>
+            <li style="color:#0033a0;">Alex — $200/day</li>
+        </ul>
+        <small style="color:#0033a0;">Want your name here? Recruit, earn, repeat.</small>
+    </div>
+
+    <!-- Packages Section -->
+    <div class="block" style="background:#fff;border:3px solid #0033a0;">
+        <h2 style="color:#d9001f;">Choose Your Package</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;">
+            <div
+                style="background:#0033a0;color:#fff;border-radius:16px;padding:24px;min-width:220px;max-width:260px;box-shadow:0 2px 12px #00286844;">
+                <h3 style="color:#0033a0;">Starter ($29)</h3>
+                <ul>
+                    <li>Access to Starter Dashboard</li>
+                    <li>Basic AI assistant</li>
+                    <li>Community support</li>
+                    <li>Weekly tips & updates</li>
+                </ul>
+            </div>
+            <div
+                style="background:#0033a0;color:#fff;border-radius:16px;padding:24px;min-width:220px;max-width:260px;box-shadow:0 2px 12px #00286844;">
+                <h3 style="color:#0033a0;">Tools Access ($49)</h3>
+                <ul>
+                    <li>Everything in Starter</li>
+                    <li>Advanced AI tools</li>
+                    <li>Exclusive training videos</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+            <div
+                style="background:#0033a0;color:#fff;border-radius:16px;padding:24px;min-width:220px;max-width:260px;box-shadow:0 2px 12px #00286844;">
+                <h3 style="color:#0033a0;">Product Vault ($99)</h3>
+                <ul>
+                    <li>Everything in Tools Access</li>
+                    <li>Product Vault access</li>
+                    <li>Downloadable resources</li>
+                    <li>Monthly mastermind calls</li>
+                </ul>
+            </div>
+            <div
+                style="background:#0033a0;color:#fff;border-radius:16px;padding:24px;min-width:220px;max-width:260px;box-shadow:0 2px 12px #00286844;">
+                <h3 style="color:#0033a0;">Special Tools ($249)</h3>
+                <ul>
+                    <li>Everything in Product Vault</li>
+                    <li>Special growth tools</li>
+                    <li>1-on-1 strategy session</li>
+                    <li>VIP mastermind group</li>
+                </ul>
+            </div>
+            <div
+                style="background:#0033a0;color:#fff;border-radius:16px;padding:24px;min-width:220px;max-width:260px;box-shadow:0 2px 12px #00286844;">
+                <h3 style="color:#0033a0;">Empire Access ($499)</h3>
+                <ul>
+                    <li>Everything in Special Tools</li>
+                    <li>Full hosting included</li>
+                    <li>Direct access to founders</li>
+                    <li>Lifetime updates & perks</li>
+                    <li>Your own kingdom to freedom</li>
+                </ul>
+            </div>
+        </div>
+        <div
+            style="margin-top:32px;font-size:1.12em;color:#0033a0;background:#fff;border-radius:14px;padding:22px 18px;box-shadow:0 2px 12px #0033a044;">
+            <div
+                style="margin-top:24px;font-size:1.08em;color:#0033a0;background:#fffbe6;border-radius:12px;padding:16px 14px;box-shadow:0 2px 12px #ffd70044;">
+                <b>The Beauty of This System:</b><br>
+                The best part? This system works for you—even when you’re napping. That’s why I give you
+                referral links: I want it to be fair, so no one comes straight to me. If you want the system for
+                life with no pass-ups, you can pay $995 for the whole lot.<br><br>
+                With the $995 package, you can make your own system, brand it yourself, and it’s yours for
+                life—no pass-ups, no restrictions. Strictly no refunds on this one, because once you’re active,
+                you’ll get access to your own cloud server.<br><br>
+                If you know the technical side and want a trained bot to lead you, go for it! You can build your
+                own shop like mine and collect Stripe payments like clockwork. If you’re willing to put in the
+                time and effort, this package is worth every penny.
+            </div>
+            <div
+                style="margin-top:24px;font-size:1.08em;color:#0033a0;background:#e6f0ff;border-radius:12px;padding:16px 14px;box-shadow:0 2px 12px #0033a044;">
+                <b>Stay in the Loop — Email & Community:</b><br>
+                You’ll always get updates daily by email, so keep a close eye on your inbox. If you miss one,
+                that’s on you—not me! I don’t want to hear “he never answers his email”—I simply don’t have time
+                to read through everyone’s messages.<br><br>
+                If you want to connect with your referrer, you’re more than welcome to. I’m setting up a
+                Facebook group just for loyal members. You can post your perks, share screenshots of your
+                earnings (which would be awesome!), and connect with the community.<br><br>
+                No bad feedback, please—I’m making sure everyone is happy and no one is left behind. I’ll also
+                post important updates on our Facebook page, called “RizzosAI People Didn’t Read My Last Email.”
+                If you’re subscribed, you’re on my email list—check your spam (though my emails shouldn’t go
+                there; if they do, it’s your email server, not mine!).
+            </div>
+            <div
+                style="margin-top:24px;font-size:1.08em;color:#0033a0;background:#ffd70022;border-radius:12px;padding:16px 14px;box-shadow:0 2px 12px #0033a044;">
+                <b>Affiliate Links — Your Ticket to Forever Referrals:</b><br>
+                Everyone gets an affiliate link in their back office, where you’ll pick your username. If you
+                don’t know what an affiliate link is, look it up on Google. Actually, no—let me tell
+                you:<br><br>
+                An affiliate link is your personal invite code. When you send someone to your link, no one can
+                take that referral away from you—they’re yours forever. (Except your second one, because now
+                he’s working for me, so I get his first and second one!)<br><br>
+                I’m not being greedy, I’m just being strategic. You’re getting plenty out of me already. If you
+                want more, go rob a bank—because that’s the only way you’ll get in front of this system. And
+                honestly, you won’t get enough from robbing a bank anyway. Your call!
+            </div>
+            <b>Upgrade on Your Terms:</b> It doesn’t matter what level you join at—your money stays in your
+            account, and you can upgrade to the next level whenever you want. If you’re happy with your current
+            perks, that’s perfect—no pressure, no upsells, no stress.<br><br>
+            I don’t believe in pressuring people into something they’re skeptical about. You’re in control,
+            always.<br><br>
+            <b>How long to reach the $499 Empire level if you leave 2 referral earnings in your account
+                (doubling your money)?</b><br>
+            <span style="color:#d9001f;font-weight:bold;">Remember: your second referral always goes up to me
+                (Rizzo), so the doubling effect is from the two referrals you keep!</span><br>
+            <ul style="margin:12px 0 0 0;padding-left:18px;">
+                <li><b>Starter ($29):</b> Exactly 17 days to reach $499.</li>
+                <li><b>Tools Access ($49):</b> Exactly 11 days to reach $499.</li>
+                <li><b>Product Vault ($99):</b> Exactly 6 days to reach $499.</li>
+                <li><b>Special Tools ($249):</b> Exactly 3 days to reach $499.</li>
+            </ul>
+            These are the closest estimates if you let your daily earnings from 2 referrals stack up—no extra
+            effort required. With just 2 referrals, you’re doubling your money and can upgrade fast. The system
+            works at your pace, and you decide when to upgrade.
+        </div>
+    </div>
+
+
+    <!-- AWeber Web Form Generator 3.0.1 (Visible at Bottom) -->
+    <div id="aweber-form-block"
+        style="margin:32px auto;max-width:400px;background:#0033a0;border-radius:18px;box-shadow:0 4px 32px #0033a044;padding:32px 24px;">
+        <div
+            style="background:#0033a0;color:#fff;font-weight:bold;padding:12px 18px;border-radius:12px;margin-bottom:18px;text-align:center;font-size:1.15em;box-shadow:0 2px 12px #0033a022;">
+            Enter your name and email below to <span style="color:#ffd700;">get the keys to the kingdom</span>.<br>
+            Unlock your dashboard, perks, and a shot at freedom. 🗝️👑
+        </div>
+        <form method="post" class="af-form-wrapper" accept-charset="UTF-8"
+            action="https://www.aweber.com/scripts/addlead.pl"
+            style="background:#0033a0;padding:18px 12px;border-radius:12px;box-shadow:0 2px 12px #00286844;">
+            <div style="display: none;">
+                <input type="hidden" name="meta_web_form_id" value="246060538" />
+                <input type="hidden" name="meta_split_id" value="" />
+                <input type="hidden" name="listname" value="awlist6919614" />
+                <!-- Redirect removed: user will not be sent to Stripe immediately -->
+                <input type="hidden" name="meta_adtracking" value="My_Web_Form" />
+                <input type="hidden" name="meta_message" value="1" />
+                <input type="hidden" name="meta_required" value="name,email" />
+                <input type="hidden" name="meta_tooltip" value="" />
+            </div>
+            <div id="af-form-246060538" class="af-form">
+                <div id="af-header-246060538" class="af-header">
+                    <div class="bodyText">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div id="af-body-246060538" class="af-body af-standards">
+                    <div class="af-element"><label class="previewLabel" for="awf_field-118371260">Name:</label>
+                        <div class="af-textWrap"><input id="awf_field-118371260" type="text" name="name" class="text"
+                                value="" tabindex="500" /></div>
+                        <div class="af-clear"></div>
+                    </div>
+                    <div class="af-element"><label class="previewLabel" for="awf_field-118371261">Email:</label>
+                        <div class="af-textWrap"><input class="text" id="awf_field-118371261" type="email" name="email"
+                                value="" tabindex="501" /></div>
+                        <div class="af-clear"></div>
+                    </div>
+                    <div class="af-element buttonContainer"><input name="submit" class="submit" type="submit"
+                            value="Submit" tabindex="503" />
+                        <div class="af-clear"></div>
+                    </div>
+                    <div class="af-element privacyPolicy" style="text-align: center">
+                        <p>We respect your <a title="Privacy Policy" href="https://www.aweber.com/permission.htm"
+                                target="_blank" rel="nofollow">email privacy</a></p>
+                        <div class="af-clear"></div>
+                    </div>
+                    <div class="af-element poweredBy" style="text-align: center; font-size: 9px;">
+                        <p><a href="https://www.aweber.com" title="AWeber Email Marketing" target="_blank"
+                                rel="nofollow">Powered by AWeber Email Marketing</a></p>
+                        <div class="af-clear"></div>
+                    </div>
+                </div>
+                <div id="af-footer-246060538" class="af-footer">
+                    <div class="bodyText">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=TCxsDGwMrMwc" alt="" />
+            </div>
+        </form>
+    </div>
+    <!-- /AWeber Web Form Generator 3.0.1 -->
+    <script>
+        // Cinematic countdown block (next payout in 12 hours)
+        function updateCountdown() {
+            const now = new Date();
+            const nextPayout = new Date();
+            nextPayout.setHours(24, 0, 0, 0); // Midnight next day
+            const diff = nextPayout - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+            document.getElementById('countdown').textContent =
+                `Next payout in ${hours}h ${minutes}m ${seconds}s`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+
+<footer style="text-align:center;margin:40px 0 16px 0;font-size:1em;color:#0033a0;">
+    <a href="https://github.com/rizzosai/rizzosai-frontend/blob/main/terms.html" target="_blank"
+        style="color:#0033a0;text-decoration:underline;">Terms & Conditions</a>
+</footer>
+
+</html>
